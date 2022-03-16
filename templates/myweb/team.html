@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block maincontent %}
+
+<!--inner banner-->
+<div class="inner-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>Our Teams</h1>
+      </div>
+      <div class="col-md-5">
+        <ol class="breadcrumb">
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li class="active">Teams</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<!--inner banner End-->
+
+<!--Main Content Start-->
+<div class="main-content">
+  <div class="team-page">
+    <div class="container">
+      <div class="row">
+        {% for team in object_list %}
+        <div class="col-md-3 col-sm-6">
+          <div class="team-box mb50">
+            <div class="team-thumb"> <a href="{% url 'team_details' team.id %}" class="view"><i class="fa fa-Heart"
+                  aria-hidden="true"></i></a> <img src="{{ team.picture.url }}" alt=""></div>
+            <div class="team-text">
+              <h5><a href="{% url 'team_details' team.id %}">{{ team.name }}</a></h5>
+              <strong>{{ team.speciality }}</strong>
+              <ul class="team-social">
+                {% if team.twitter %}
+                <li><a class="tw" href="{{ team.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                {% endif %}
+                {% if team.facebook %}
+                <li><a class="fb" href="{{ team.facebook }}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                {% endif %}
+                {% if team.instagram %}
+                <li><a class="insta" href="{{ team.instagram }}"><i class="fa fa-instagram"
+                      aria-hidden="true"></i></a></li>
+                {% endif %}
+              </ul>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          {% if is_paginated %}
+          {% include 'partials/_pagination.html' %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Main Content End-->
+{% endblock maincontent %}
