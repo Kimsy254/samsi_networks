@@ -61,7 +61,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <p><strong>Samsi Networks</strong> © {% now 'Y' %}, All Rights Reserved, Design & Developed By Samsi Networks</p>
+          <p><strong>Samsi Networks</strong> © {% now 'Y' %}, Developed By Compiteks</p>
         </div>
       </div>
     </div>

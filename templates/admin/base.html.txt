@@ -1,20 +1,4 @@
 {% extends 'admin/base.html' %}
-{% load static %}
-
-{% block branding %}
-<h1 id="head">
-    Samsi Networks
-</h1>
-{% endblock branding %}
-
-
-{% block extrastyle %}
-<link rel="stylesheet" href="{% static 'samsi_networks/css/admin.css' %}">
-{% endblock extrastyle %}
-
-
-
-
 
 {% block extrahead %}{{ block.super }}
 <style>
