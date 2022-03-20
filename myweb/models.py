@@ -36,10 +36,10 @@ class Item(models.Model):
 class Team(models.Model):
     name = models.CharField(max_length=120)
     speciality = models.CharField(max_length=120)
-    picture = models.ImageField(upload_to="doctors/")
+    picture = models.ImageField(upload_to="teams/")
     details = models.TextField()
     experience = models.TextField()
-    expertize = models.ManyToManyField(to='Expertize', related_name='doctors')
+    expertize = models.ManyToManyField(to='Expertize', related_name='teams')
     twitter = models.CharField(max_length=120, blank=True, null=True)
     facebook = models.CharField(max_length=120, blank=True, null=True)
     instagram = models.CharField(max_length=120, blank=True, null=True)
