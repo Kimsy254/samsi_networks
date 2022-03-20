@@ -77,7 +77,7 @@ class ContactView(TemplateView):
                 subject+"-"+phone,
                 message,
                 email,
-                ['livingstonkimani@gmail.com'],
+                ['asimiyu@samsinetworks.com'],
                 fail_silently=False,
             )
             messages.success(request, " Email hasbeen sent successfully...")

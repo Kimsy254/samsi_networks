@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from django.contrib import messages
-from .models import Slider, Service, Team, Faq
+from .models import Slider, Service, Team, Faq, Gallery
 from django.views.generic import ListView, DetailView, TemplateView
 
 
@@ -51,6 +51,12 @@ class TeamDetailView(DetailView):
 class FaqListView(ListView):
     template_name = 'myweb/faqs.html'
     queryset = Faq.objects.all()
+
+
+class GalleryListView(ListView):
+    template_name = 'myweb/gallery.html'
+    queryset = Gallery.objects.all()
+    paginate_by = 9
 
 
 class ContactView(TemplateView):
