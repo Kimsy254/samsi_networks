@@ -116,17 +116,7 @@ body .tp0 {
 }
 
 /*****************  Header Start  *****************/
-@media all and (min-width: 768px) {
-  .hidden-desktop {
-    display: none !important;
-  }
-}
 
-@media all and (max-width: 767px) {
-  .hidden-mobile {
-    display: none !important;
-  }
-}
 
 .site-header {
 	width: 100%;
@@ -140,7 +130,7 @@ body .tp0 {
 	background: #fff;
 	padding: 30px 0;
 	position: relative;
-	z-index: 99;
+	z-index: 1;
 	box-shadow: 5px 0 10px rgba(0, 0, 0, .10);
 }
 
