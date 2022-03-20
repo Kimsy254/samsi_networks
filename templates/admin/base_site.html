@@ -1,13 +1,26 @@
-{% extends 'admin/base.html' %}
-{% load static %}
+{% extends "admin/login.html" %}
 
-{% block branding %}
-<h1 id="head">
-    Samsi Networks
-</h1>
-{% endblock branding %}
-
+{% load i18n static %}
 
 {% block extrastyle %}
-<link rel="stylesheet" href="{% static 'samsi_networks/css/admin.css' %}">
-{% endblock extrastyle %}
+{{ block.super }}
+<style>
+#header {
+  background-color: transparent !important;
+}
+</style>
+{% endblock %}
+
+{% block branding %}
+<h1>
+  <span style="color: #57C5A5 !important">Samsi Networks</span>
+  <br />
+  <small>{% block head_title %}{% endblock %}</small>
+</h1>
+{% endblock %}
+
+{% block content_title %}
+<p class="lead" style="font-size: larger">
+Admin Interface
+</p>
+{% endblock %}
