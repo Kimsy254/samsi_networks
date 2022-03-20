@@ -39,7 +39,7 @@
       --accent: #f5dd5d;
       --primary-fg: #fff;
       --body-fg: #333;
-      --body-bg: #F8F6F0;
+      --body-bg: #fff;
       --body-quiet-color: #666;
       --body-loud-color: #000;
       --header-color: #ffc;
