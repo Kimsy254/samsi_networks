@@ -125,7 +125,8 @@ body .tp0 {
 }
 
 .nav-logo-area {
-	width: 100%;
+	width: 2rem !important;
+    height: 2rem !important;
 	float: left;
 	left: -10px;
 	background: #fff;
@@ -364,7 +365,8 @@ body .tp0 {
 }
 
 .header-style-two .header-logo {
-	width: 100%;
+	width: 2rem !important;
+    height: 2rem !important;
 	float: left;
 	background: #fff;
 	padding: 30px 0;
