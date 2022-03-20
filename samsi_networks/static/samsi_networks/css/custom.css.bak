@@ -116,6 +116,18 @@ body .tp0 {
 }
 
 /*****************  Header Start  *****************/
+@media all and (min-width: 768px) {
+  .hidden-desktop {
+    display: none !important;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+
 .site-header {
 	width: 100%;
 	float: left;
