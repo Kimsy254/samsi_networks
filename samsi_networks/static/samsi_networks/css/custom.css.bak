@@ -2520,7 +2520,7 @@ body .faqs .collapse {
 	border: 0px;
 	border-radius: 0;
 	margin-right: 2px;
-	background: #f1f1f1;
+	background: #008080;
 	font-size: 18px;
 	color: #222222;
 	font-family: 'Montserrat', sans-serif;
