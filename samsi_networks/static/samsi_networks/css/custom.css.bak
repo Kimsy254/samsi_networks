@@ -365,8 +365,7 @@ body .tp0 {
 }
 
 .header-style-two .header-logo {
-	width: 2rem !important;
-    height: 2rem !important;
+	width: 100%;
 	float: left;
 	background: #fff;
 	padding: 30px 0;
