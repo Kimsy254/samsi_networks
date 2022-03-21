@@ -126,7 +126,9 @@ body .tp0 {
 
 .nav-logo-area {
 	
-	width: 500%;
+	margin-bottom: 16px;
+	max-width: 100%;
+	height: auto;
 	float: left;
 	background: #fff;
 	padding: 7px;
