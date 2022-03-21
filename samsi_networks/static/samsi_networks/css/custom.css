@@ -126,12 +126,10 @@ body .tp0 {
 
 .nav-logo-area {
 	
-	margin-bottom: 16px;
-	max-width: 100%;
-	height: auto;
+	width: 500%;
 	float: left;
 	background: #fff;
-	padding: 7px;
+	padding: 7px 0;
 	position: relative;
 	z-index: 99;
 	box-shadow: 5px 0 10px rgba(0, 0, 0, .10);
