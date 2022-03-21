@@ -65,7 +65,8 @@
               </div>
               <div class="col-md-12">
                 <div class="input-group text-center">
-                  <input type="submit" class="submit-btn" value="Send"><i class="fa fa-paper-plane" aria-hidden="true"></i>
+				<i class="fa fa-paper-plane" aria-hidden="true"></i>
+                  <input type="submit" class="submit-btn" value="Send
                 </div>
               </div>
             </div>
